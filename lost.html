@@ -7,13 +7,13 @@
 
     </head>
     <body>
-        <form action="\registration" method="POST">
+        <form action="/lostdetails" method="POST">
             <label>Enter Name:</label>
-            <input type="username" placeholder="Enter name"><br>
+            <input type="username" placeholder="Enter name" id="name"><br>
             <label>Enter Registration Number:</label>
-            <input type="username" placeholder="Enter registration number"><br>
+            <input type="username" placeholder="Enter registration number" id="regNo"><br>
             <label>Enter description of item lost:</label>
-            <input type="text" placeholder="One word description"><br>
+            <input type="text" placeholder="One word description" id="description"><br>
         </form>
         <form action="/upload" method="POST" enctype="multipart/form-data"></form>
             <label for="image">Upload Image of item lost(if available):</label><br>
