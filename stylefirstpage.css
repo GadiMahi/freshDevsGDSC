@@ -1,32 +1,49 @@
+html,  body{
+    height: 100%;
+}
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+
+}
+.button-container{
+    gap:10px;
+}
 .button1{
     transition-duration: 0.4s;
     padding: 25px 40px;
-    background-color: rgb(53, 53, 81);
+    background-color: black;    
     border-radius: 12px;
     position: absolute;
     left: 450px;
     top: 400px;
     font-size: 32px;
     width: 500px;
+    color: rgb(147, 147, 16)
 }
 .button1:hover{
-    background-color: rgb(95, 95, 149);
-    color: rgb(10, 10, 10);
+    background-color: rgb(46, 43, 43);
+    color: rgb(160, 160, 19);
     box-shadow: 0 8px 16px 0 rgba(242, 242, 242, 0.2), 0 6px 20px 0 rgba(242, 236, 236, 0.19);
 }
 .button2{
     transition-duration: 0.4s;
     padding: 25px 40px;
-    background-color:rgb(53, 53, 81);
+    background-color: black; 
     border-radius: 12px;
     position: absolute;
     left: 450px;
-    top: 300px;
+    top: 275px;
     font-size: 32px;
     width: 500px;
+    color: rgb(147, 147, 16)
 }
 .button2:hover{
-    background-color: rgb(95, 95, 149);
-    color: rgb(10, 10, 10);
+    background-color: rgb(46, 43, 43);
+    color: rgb(160, 160, 19);
     box-shadow: 0 8px 16px 0 rgba(242, 242, 242, 0.2), 0 6px 20px 0 rgba(242, 236, 236, 0.19);
 }   
