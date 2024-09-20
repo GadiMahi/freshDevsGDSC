@@ -1,56 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-  background-color: navy;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
+    <head>
+        <style>
+            
+        </style>
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+    </head>
+    <body>
+        <form action="\registration" method="POST">
+            <label>Enter Name:</label>
+            <input type="username" placeholder="Enter name"><br>
+            <label>Enter Registration Number:</label>
+            <input type="username" placeholder="Enter registration number"><br>
+            <label>Enter description of item lost:</label>
+            <input type="text" placeholder="One word description"><br>
+        </form>
+        <form action="/upload" method="POST" enctype="multipart/form-data"></form>
+            <label for="image">Upload Image of item lost(if available):</label><br>
+            <input type="file" id="image" name="image" accept="image/*" required><br>
+        </form>
+        
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: powderblue;}
-</style>
-</head>
-<body bgcolor="black">
-
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Electronics</a>
-    <a href="#">Accessories</a>
-    <a href="#">Clothes</a>
-    <a href="#">Others</a>
-    <a href="#">Person</a>
-  </div>
-</div>
-
-</body>
+    </body>
 </html>

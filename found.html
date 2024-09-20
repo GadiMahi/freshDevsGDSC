@@ -7,8 +7,29 @@
             }
         </style>
     </head>
-    <body bgcolor="black">
-        <h1>Upload Image</h1>
-        <input type="file" accept="image/*" capture="camera">
+    <body>
+        <h1>Report a found item</h1>
+        <div>
+            <form action="\lost" method="POST">
+                <label for="username">Your Name:</label><br>
+                <input type="text" name="name" placeholder="Enter your name"><br>
+                <label for="name">Registration Number:</label><br>
+                <input type="text" name="name" placeholder="VIT Registration number"><br>
+                <label for "number">Contact number:</label><br>
+                <input type="number" name="Phone Number" placeholder="Enter contact details"><br>
+                <label for="text">Where was it found?</label><br>
+                <input type="text" name="Location">
+
+            </form>
+        </div>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="image">Upload Image of item found:</label><br>
+            <input type="file" id="image" name="image" accept="image/*" required><br>
+        
+            <label for="description">Description of the Item:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" placeholder="Provide description(optional)" required></textarea><br><br>
+            <button type="submit">Submit</button><br>
+
+        </form>
     </body>
 </html>
